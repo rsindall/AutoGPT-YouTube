@@ -12,3 +12,4 @@ yt-dlp
 SpeechRecognition
 pydub
 youtube_transcript_api
+nltk
