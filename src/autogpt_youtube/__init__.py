@@ -77,7 +77,7 @@ class AutoGPT_YouTube(AutoGPTPluginTemplate):
         prompt.add_command(
             "get_youtube_transcript",
             "Get the transcript of a YouTube video",
-            {"url": "<video url>"},
+            {"url": "<str>"},
             get_youtube_transcript
         )
 
@@ -93,7 +93,7 @@ class AutoGPT_YouTube(AutoGPTPluginTemplate):
         prompt.add_command(
             "search_youtube",
             "Search YouTube for videos",
-            {"query": "<search query>"},
+            {"query": "<str>"},
             search_youtube
         )
 
