@@ -62,13 +62,13 @@ class AutoGPT_YouTube(AutoGPTPluginTemplate):
         prompt.add_command(
             "download_youtube_video",
             "Download a YouTube video",
-            {"url": "<video url>", "output_file": "file name"},
+            {"url": "<str>", "output_file": "file name"},
             download_youtube_video,
         )
         prompt.add_command(
             "download_youtube_audio",
             "Download a YouTube video's audio",
-            {"url": "<video url>", "output_file": "file name"},
+            {"url": "<str>", "output_file": "file name"},
             download_youtube_audio,
         )
 
@@ -100,14 +100,14 @@ class AutoGPT_YouTube(AutoGPTPluginTemplate):
         prompt.add_command(
             "get_youtube_comments",
             "Get some comments of a YouTube video",
-            {"url": "<video url>"},
+            {"url": "<str>"},
             get_youtube_comments
         )
 
         prompt.add_command(
             "get_youtube_video_info",
             "Get information about a YouTube video",
-            {"url": "<video url>"},
+            {"url": "<str>"},
             get_youtube_video_info
         )
 
