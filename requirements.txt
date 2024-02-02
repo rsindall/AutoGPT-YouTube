@@ -14,4 +14,3 @@ pydub
 youtube_transcript_api
 nltk
 ffmpeg
-avconv
