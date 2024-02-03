@@ -62,13 +62,13 @@ class AutoGPT_YouTube(AutoGPTPluginTemplate):
         prompt.add_command(
             "download_youtube_video",
             "Download a YouTube video",
-            {"url": "string", "output_file": "file name"},
+            {"url": "string", "output_file": "string"},
             download_youtube_video,
         )
         prompt.add_command(
             "download_youtube_audio",
             "Download a YouTube video's audio",
-            {"url": "string", "output_file": "file name"},
+            {"url": "string", "output_file": "string"},
             download_youtube_audio,
         )
 
